@@ -1,6 +1,6 @@
 # Linux
 
-## Linux 文件系统
+## Linux 文件系统和文件操作
 
 - **/dev** - 存放 device 文件
 - **/bin** - 存放可执行的文件
@@ -10,7 +10,7 @@
 - **/usr**
   - **/usr/bin/**
 
-## file 检查文件类型
+### file - 检查文件类型
 
 ```bash
 file path_to_filename
@@ -26,7 +26,7 @@ file path_to_filename
 - p: 管道文件
 - s: 套接文件
 
-## ls 检查目录里的文件信息
+### ls - 检查目录里的文件信息
 
 ```bash
 ls 常用参数
@@ -42,4 +42,43 @@ ls 常用参数
 -t 按mtime排序(先显示时间最近的)
 -ul 按atime排序(先显示时间最近的)
 -ct 按ctime排序(先显示时间最近的)
+```
+
+### mkdir - 创建一个目录
+
+```bash
+mkdir dirname
+```
+
+```bash
+mkdir -p dirname/subdir/filename
+```
+
+### touch - 创建文件
+
+- 文件名区分大小写
+- 文件不能包含特殊符号
+- 文件名最多255个字符
+
+```bash
+touch filename
+```
+
+- 如果文件不存在，创建文件
+- 如果文件存在，则修改文件的时间戳
+
+### rm - 删除文件
+
+```bash
+rm filename
+```
+
+```bash
+rm -r dirname
+```
+
+### stat - 获得文件的详细信息
+
+```bash
+stat filename
 ```
