@@ -137,4 +137,5 @@ head -n filename    # show top n lines
 ```bash
 tail filename       # show last 10 lines
 tail -n filename    # show last n lines
+tail -f filename    # 动态的查看文件的最后部分
 ```
