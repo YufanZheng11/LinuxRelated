@@ -1,5 +1,7 @@
 # Linux
 
+[Linux 命令大全](https://www.runoob.com/linux/linux-command-manual.html)
+
 ## Linux 文件系统和文件操作
 
 - **/dev** - 存放 device 文件
