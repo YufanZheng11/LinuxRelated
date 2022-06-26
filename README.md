@@ -61,11 +61,11 @@ mkdir -p dirname/subdir/filename
 - 文件名最多255个字符
 
 ```bash
-touch filename
+touch filename_not_exist        # 如果文件不存在，创建文件
+touch filename_exist            # 如果文件存在，则修改文件的时间戳
 ```
 
-- 如果文件不存在，创建文件
-- 如果文件存在，则修改文件的时间戳
+人为的改变特定的时间戳
 
 ```bash
 touch -a filename -t "202202021212"   # change access file time to 202202021212
