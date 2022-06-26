@@ -90,8 +90,37 @@ stat filename
 
 可以看到文件的访问，创建，修改时间等信息
 
-### cat - 看文件的内容
+### cat - 看小文件的内容
 
 ```bash
-cat filename
+cat small_filename
+-h 显示行号
+```
+
+### tac - 看小文件的内容（最后一行在最上面，第一行在最下面，刚好和 cat 相反）
+
+```bash
+tac small_filename
+-h 显示行号
+```
+
+### less - 查看大文件
+
+```bash
+less filename
+
+空格 ： 一页一页翻
+回车 ： 一行一行翻
+上下 ： page up down
+/xxx ： 搜索 xxx 回车
+        按住 n 找到下一个搜索的店
+q   ： 退出
+```
+
+### more - 查看大文件
+
+一般使用 less，比较好用， 功能更多
+
+```bash
+more filename
 ```
