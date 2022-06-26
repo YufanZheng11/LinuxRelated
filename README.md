@@ -1,5 +1,14 @@
 # Linux
-
+<!-- TOC start -->
+- [Linux 文件系统和文件操作](#linux-)
+  * [file - 检查文件类型](#file-)
+  * [ls - 检查目录里的文件信息](#ls-)
+  * [mkdir - 创建一个目录](#mkdir-)
+  * [touch - 创建文件](#touch-)
+  * [rm - 删除文件/ 目录](#rm-)
+  * [stat - 获得文件的详细信息](#stat-)
+<!-- TOC end -->
+<!-- TOC --><a name="linux-"></a>
 ## Linux 文件系统和文件操作
 
 - **/dev** - 存放 device 文件
@@ -10,6 +19,7 @@
 - **/usr**
   - **/usr/bin/**
 
+<!-- TOC --><a name="file-"></a>
 ### file - 检查文件类型
 
 ```bash
@@ -26,6 +36,7 @@ file path_to_filename
 - p: 管道文件
 - s: 套接文件
 
+<!-- TOC --><a name="ls-"></a>
 ### ls - 检查目录里的文件信息
 
 ```bash
@@ -44,6 +55,7 @@ ls 常用参数
 -ct 按ctime排序(先显示时间最近的)
 ```
 
+<!-- TOC --><a name="mkdir-"></a>
 ### mkdir - 创建一个目录
 
 ```bash
@@ -54,6 +66,7 @@ mkdir dirname
 mkdir -p dirname/subdir/filename
 ```
 
+<!-- TOC --><a name="touch-"></a>
 ### touch - 创建文件
 
 - 文件名区分大小写
@@ -67,7 +80,8 @@ touch filename
 - 如果文件不存在，创建文件
 - 如果文件存在，则修改文件的时间戳
 
-### rm - 删除文件
+<!-- TOC --><a name="rm-"></a>
+### rm - 删除文件/ 目录
 
 ```bash
 rm filename
@@ -77,6 +91,7 @@ rm filename
 rm -r dirname
 ```
 
+<!-- TOC --><a name="stat-"></a>
 ### stat - 获得文件的详细信息
 
 ```bash
