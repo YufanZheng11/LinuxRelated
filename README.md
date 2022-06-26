@@ -14,7 +14,6 @@
 
 ```bash
 file path_to_filename
-```
 
 文件的类型分类
 
@@ -25,6 +24,7 @@ file path_to_filename
 - f/-: 普通文件
 - p: 管道文件
 - s: 套接文件
+```
 
 ### ls - 检查目录里的文件信息
 
@@ -48,9 +48,6 @@ ls 常用参数
 
 ```bash
 mkdir dirname
-```
-
-```bash
 mkdir -p dirname/subdir/filename
 ```
 
@@ -93,8 +90,17 @@ stat filename
 ### cat - 看小文件的内容
 
 ```bash
-cat small_filename
--h 显示行号
+cat [-AbeEnstTuv] [--help] [--version] fileName
+
+-n 或 --number：由 1 开始对所有输出的行数编号。
+-b 或 --number-nonblank：和 -n 相似，只不过对于空白行不编号。
+-s 或 --squeeze-blank：当遇到有连续两行以上的空白行，就代换为一行的空白行。
+-v 或 --show-nonprinting：使用 ^ 和 M- 符号，除了 LFD 和 TAB 之外。
+-E 或 --show-ends : 在每行结束处显示 $。
+-T 或 --show-tabs: 将 TAB 字符显示为 ^I。
+-A, --show-all：等价于 -vET。
+-e：等价于"-vE"选项；
+-t：等价于"-vT"选项；
 ```
 
 ### tac - 看小文件的内容（最后一行在最上面，第一行在最下面，刚好和 cat 相反）
@@ -144,4 +150,18 @@ tail -f filename    # 动态的查看文件的最后部分
 
 ```bash
 ldd /usr/bin/mkdir
+```
+
+### cp - 拷贝文件
+
+```bash
+cp [options] source dest
+
+-a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。
+-d：复制时保留链接。这里所说的链接相当于 Windows 系统中的快捷方式。
+-f：覆盖已经存在的目标文件而不给出提示。
+-i：与 -f 选项相反，在覆盖目标文件之前给出提示，要求用户确认是否覆盖，回答 y 时目标文件将被覆盖。
+-p：除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。
+-r：若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。
+-l：不复制文件，只是生成链接文件。
 ```
