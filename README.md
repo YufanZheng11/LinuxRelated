@@ -67,6 +67,11 @@ touch filename
 - 如果文件不存在，创建文件
 - 如果文件存在，则修改文件的时间戳
 
+```bash
+touch -a filename -t 202202021212   # change access file time to 202202021212
+touch -m filename -t 202202021212   # change modified file time to 202202021212
+```
+
 ### rm - 删除文件/ 目录
 
 ```bash
@@ -82,6 +87,8 @@ rm -r dirname
 ```bash
 stat filename
 ```
+
+可以看到文件的访问，创建，修改时间等信息
 
 ### cat - 看文件的内容
 
