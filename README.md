@@ -68,8 +68,9 @@ touch filename
 - 如果文件存在，则修改文件的时间戳
 
 ```bash
-touch -a filename -t 202202021212   # change access file time to 202202021212
-touch -m filename -t 202202021212   # change modified file time to 202202021212
+touch -a filename -t "202202021212"   # change access file time to 202202021212
+touch -m filename -t "202202021212"   # change modified file time to 202202021212
+touch -d filename -t "202202021212"   # change both access/modified file time to 202202021212
 ```
 
 ### rm - 删除文件/ 目录
