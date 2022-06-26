@@ -124,3 +124,17 @@ q   ： 退出
 ```bash
 more filename
 ```
+
+### head - 查看前几行文件
+
+```bash
+head filename       # show top 10 lines
+head -n filename    # show top n lines
+```
+
+### tail - 查看前几行文件
+
+```bash
+tail filename       # show last 10 lines
+tail -n filename    # show last n lines
+```
