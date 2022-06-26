@@ -77,10 +77,9 @@ touch -d filename -t "202202021212"   # change both access/modified file time to
 
 ```bash
 rm filename
-```
-
-```bash
+rm -f filename
 rm -r dirname
+rm -rf dirname
 ```
 
 ### stat - 获得文件的详细信息
