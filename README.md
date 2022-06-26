@@ -139,3 +139,9 @@ tail filename       # show last 10 lines
 tail -n filename    # show last n lines
 tail -f filename    # 动态的查看文件的最后部分
 ```
+
+### ldd - 查看二进制的文件
+
+```bash
+ldd /usr/bin/mkdir
+```
